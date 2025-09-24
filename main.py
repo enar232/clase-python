@@ -1,6 +1,20 @@
-def main():
-    print("Hello from myapp!")
+nombre = "Marcos"
 
+print("nombre: ", nombre)
 
-if __name__ == "__main__":
-    main()
+print(f"nombre: {nombre}")
+
+print(type(nombre))
+
+edad = 39
+
+print(f"la edad es {edad}")
+
+altura = 1.75 #floaT
+
+print(type(altura))
+
+es_estudiante = True
+
+print(type(es_estudiante))
+
