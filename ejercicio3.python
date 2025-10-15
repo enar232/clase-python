@@ -1,0 +1,27 @@
+inventario = {"manzanas" = 10, "peras": 3, "naranjas"; 8}
+
+print(inventario)
+
+#agregar un nuevo producto
+producto_nuevo = input("ingrese el nombre el nombre del nuevo producto")
+cantidad_nuevo = int(input("ingrese la cantidad en stock"))
+
+inventario[producto_nuevo] = cantidad_nuevo
+
+print(inventario)
+
+#actualizar la cantidad de un producto existente
+producto_actualizar = input("Ingrese el producto que desea actualizar)
+ if (producto_actualizar in inventario):
+ nueva_cantidad = int(input("ingrese la nueva cantidad:"))
+ inventario[producto_actualizar] = nueva_cantidad
+ else:
+ print("El producto no existe en el inventario")
+
+ print(inventario)
+
+ #mostrar producto con stock menos a 5
+ print("Productos con stock bajo:")
+for producto, cantidad in inventario.items():
+if cantidad < 5:
+  print(f"{producto}: {cantidad}")
